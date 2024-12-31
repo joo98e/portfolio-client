@@ -1,6 +1,8 @@
 {
   "name": "portfolio-client",
   "version": "1.0.0",
+  "private": true,
+  "license": "MIT",
   "scripts": {
     "common": "yarn workspace @joo98e/common",
     "client": "yarn workspace @apps/portfolio-client"
