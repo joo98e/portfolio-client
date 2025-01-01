@@ -2,8 +2,6 @@
 .idea
 .bin
 *.iml
-.yarn
-.yarn/**/*
 
 # dependencies
 .next
@@ -11,6 +9,8 @@
 /.pnp
 .pnp.js
 .yarn/install-state.gz
+.yarn/cache
+.yarn/unplugged
 
 # testing
 /coverage
