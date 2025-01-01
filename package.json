@@ -7,12 +7,14 @@
     "common": "yarn workspace @joo98e/common",
     "client": "yarn workspace @apps/portfolio-client"
   },
-  "workspaces": {
-    "packages": [
-      "packages/**",
-      "apps/**"
-    ]
-  },
+  "workspaces": [
+    "packages/**",
+    "apps/**"
+  ],
   "repository": "https://github.com/joo98e/portfolio-client.git",
-  "author": "joo98e <jtbeok@gmail.com>"
+  "author": "joo98e <jtbeok@gmail.com>",
+  "packageManager": "yarn@4.6.0",
+  "devDependencies": {
+    "prettier": "^3.4.2"
+  }
 }

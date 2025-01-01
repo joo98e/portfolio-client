@@ -1,6 +1,9 @@
 # idea
 .idea
+.bin
 *.iml
+.yarn
+.yarn/**/*
 
 # dependencies
 .next
