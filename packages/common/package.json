@@ -1,4 +1,15 @@
 {
   "name": "@joo98e/common",
-  "version": "1.0.0"
+  "packageManager": "yarn@4.6.0",
+  "version": "1.0.0",
+  "scripts": {
+    "build:token": "ts-node src/palette/build-token.ts"
+  },
+  "dependencies": {
+    "ts-node": "^10.9.2"
+  },
+  "devDependencies": {
+    "@types/node": "^22.10.2",
+    "typescript": "^5.7.2"
+  }
 }
