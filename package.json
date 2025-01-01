@@ -3,9 +3,9 @@
   "version": "1.0.0",
   "private": true,
   "license": "MIT",
-  "packageManager": "yarn@3.6.1",
   "scripts": {
     "common": "yarn workspace @joo98e/common",
+    "core": "yarn workspace @joo98e/core",
     "client": "yarn workspace @apps/portfolio-client"
   },
   "workspaces": [
@@ -15,6 +15,9 @@
   "repository": "https://github.com/joo98e/portfolio-client.git",
   "author": "joo98e <jtbeok@gmail.com>",
   "devDependencies": {
-    "prettier": "^3.4.2"
-  }
+    "@yarnpkg/sdks": "^3.2.0",
+    "prettier": "^3.4.2",
+    "typescript": "^5.7.2"
+  },
+  "packageManager": "yarn@4.6.0"
 }

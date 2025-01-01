@@ -1,6 +1,5 @@
 {
   "name": "@joo98e/common",
-  "packageManager": "yarn@3.6.1",
   "version": "1.0.0",
   "scripts": {
     "build:token": "ts-node src/palette/build-token.ts"
