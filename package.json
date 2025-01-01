@@ -3,17 +3,17 @@
   "version": "1.0.0",
   "private": true,
   "license": "MIT",
+  "packageManager": "yarn@3.6.1",
   "scripts": {
     "common": "yarn workspace @joo98e/common",
     "client": "yarn workspace @apps/portfolio-client"
   },
   "workspaces": [
-    "packages/**",
-    "apps/**"
+    "packages/*",
+    "apps/*"
   ],
   "repository": "https://github.com/joo98e/portfolio-client.git",
   "author": "joo98e <jtbeok@gmail.com>",
-  "packageManager": "yarn@4.6.0",
   "devDependencies": {
     "prettier": "^3.4.2"
   }

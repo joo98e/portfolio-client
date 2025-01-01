@@ -1,7 +1,7 @@
 {
   "name": "@apps/portfolio-client",
   "version": "0.1.0",
-  "packageManager": "yarn@4.6.0",
+  "packageManager": "yarn@3.6.1",
   "scripts": {
     "dev": "next dev",
     "build": "next build",
