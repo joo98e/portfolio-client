@@ -1,11 +1,11 @@
-export type PaletteColorName = keyof typeof palette;
-export type PaletteColorKey = keyof typeof palette extends infer R
-  ? R extends keyof typeof palette
-    ? keyof (typeof palette)[R]
-    : never
-  : never;
-
 const palette = {
+  blackAlpha: {
+    L1: "rgba(0, 0, 0, 0.05)", // 매우 낮은 투명도
+    L2: "rgba(0, 0, 0, 0.15)", // 약간 낮은 투명도
+    L3: "rgba(0, 0, 0, 0.25)", // 중간 투명도
+    L4: "rgba(0, 0, 0, 0.45)", // 높은 투명도
+    L5: "rgba(0, 0, 0, 0.75)", // 매우 높은 투명도
+  },
   gray: {
     L1: "#f8f9fa",
     L2: "#e9ecef",
@@ -29,7 +29,6 @@ const palette = {
     L8: "#f03e3e",
     L9: "#e03131",
     L10: "#c92a2a",
-    L11: "#c92a2a",
   },
   blue: {
     L1: "#e7f5ff",

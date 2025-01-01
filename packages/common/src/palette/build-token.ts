@@ -1,13 +1,30 @@
-import colors from "./palette";
+import * as fs from "fs";
+import * as path from "path";
+import palette from "./palette";
+import paletteWithRoles from "./palette-with-roles";
 
-function writeCssVariables(palette: Record<string, Record<string, string>>) {
+function writeCssVariables() {
   let cssVariables = `:root{\n`;
 
-  for (const [colorName, shades] of Object.entries(colors)) {
+  for (const [colorName, shades] of Object.entries(palette)) {
     for (const [shade, hex] of Object.entries(shades)) {
       const variableName = `--colors-${colorName}-${shade}`;
       cssVariables += `  ${variableName}: ${hex};\n`;
     }
+  }
+
+  cssVariables += "\n";
+
+  for (const [roleName, roleColor] of Object.entries(paletteWithRoles.light)) {
+    cssVariables += `  ${roleName}: ${roleColor};\n`;
+  }
+
+  cssVariables += "}\n\n";
+
+  cssVariables += "@media (prefers-color-scheme: dark) {\n";
+
+  for (const [roleName, roleColor] of Object.entries(paletteWithRoles.dark)) {
+    cssVariables += `  ${roleName}: ${roleColor};\n`;
   }
 
   cssVariables += "}";
@@ -15,6 +32,11 @@ function writeCssVariables(palette: Record<string, Record<string, string>>) {
   return cssVariables;
 }
 
-const resultCss = writeCssVariables(colors);
+const resultCss = writeCssVariables();
 
-console.log({ resultCss });
+try {
+  const destination = path.join(__dirname, "../css/theme.css");
+  fs.writeFileSync(destination, resultCss, "utf8");
+} catch (e) {
+  console.error({ e });
+}
