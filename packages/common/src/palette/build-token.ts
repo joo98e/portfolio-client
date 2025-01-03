@@ -21,7 +21,7 @@ function writeCssVariables() {
 
   cssVariables += "}\n\n";
 
-  cssVariables += "@media (prefers-color-scheme: dark) {\n";
+  cssVariables += "[data-theme='dark'] {\n";
 
   for (const [roleName, roleColor] of Object.entries(paletteWithRoles.dark)) {
     cssVariables += `  ${roleName}: ${roleColor};\n`;
