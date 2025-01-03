@@ -58,7 +58,8 @@ const RAW_RUNTIME_STATE =
           ["next", "virtual:cab35de842d3867ee4d775c1a6ff2fae0209fe305094f95dbe6c543884b1a1a9cf1d8df97f76e1e880e11bded2c680c85ddb16d961581ea1d5d951cc3486e400#npm:14.2.22"],\
           ["react", "npm:18.3.1"],\
           ["react-dom", "virtual:cab35de842d3867ee4d775c1a6ff2fae0209fe305094f95dbe6c543884b1a1a9cf1d8df97f76e1e880e11bded2c680c85ddb16d961581ea1d5d951cc3486e400#npm:18.3.1"],\
-          ["typescript", "patch:typescript@npm%3A5.2.2#optional!builtin<compat/typescript>::version=5.2.2&hash=f3b441"]\
+          ["typescript", "patch:typescript@npm%3A5.2.2#optional!builtin<compat/typescript>::version=5.2.2&hash=f3b441"],\
+          ["ua-parser-js", "npm:2.0.0"]\
         ],\
         "linkType": "SOFT"\
       }]\
@@ -1634,6 +1635,15 @@ const RAW_RUNTIME_STATE =
         "linkType": "HARD"\
       }]\
     ]],\
+    ["detect-europe-js", [\
+      ["npm:0.1.2", {\
+        "packageLocation": "../../../.yarn/berry/cache/detect-europe-js-npm-0.1.2-9816312e98-10c0.zip/node_modules/detect-europe-js/",\
+        "packageDependencies": [\
+          ["detect-europe-js", "npm:0.1.2"]\
+        ],\
+        "linkType": "HARD"\
+      }]\
+    ]],\
     ["diff", [\
       ["npm:4.0.2", {\
         "packageLocation": "../../../.yarn/berry/cache/diff-npm-4.0.2-73133c7102-10c0.zip/node_modules/diff/",\
@@ -3006,6 +3016,15 @@ const RAW_RUNTIME_STATE =
         "packageDependencies": [\
           ["is-shared-array-buffer", "npm:1.0.4"],\
           ["call-bound", "npm:1.0.3"]\
+        ],\
+        "linkType": "HARD"\
+      }]\
+    ]],\
+    ["is-standalone-pwa", [\
+      ["npm:0.1.1", {\
+        "packageLocation": "../../../.yarn/berry/cache/is-standalone-pwa-npm-0.1.1-e10a0adc26-10c0.zip/node_modules/is-standalone-pwa/",\
+        "packageDependencies": [\
+          ["is-standalone-pwa", "npm:0.1.1"]\
         ],\
         "linkType": "HARD"\
       }]\
@@ -4684,6 +4703,27 @@ const RAW_RUNTIME_STATE =
         "packageLocation": "../../../.yarn/berry/cache/typescript-patch-aed9e5263d-10c0.zip/node_modules/typescript/",\
         "packageDependencies": [\
           ["typescript", "patch:typescript@npm%3A5.7.2#optional!builtin<compat/typescript>::version=5.7.2&hash=5786d5"]\
+        ],\
+        "linkType": "HARD"\
+      }]\
+    ]],\
+    ["ua-is-frozen", [\
+      ["npm:0.1.2", {\
+        "packageLocation": "../../../.yarn/berry/cache/ua-is-frozen-npm-0.1.2-078ef16b13-10c0.zip/node_modules/ua-is-frozen/",\
+        "packageDependencies": [\
+          ["ua-is-frozen", "npm:0.1.2"]\
+        ],\
+        "linkType": "HARD"\
+      }]\
+    ]],\
+    ["ua-parser-js", [\
+      ["npm:2.0.0", {\
+        "packageLocation": "../../../.yarn/berry/cache/ua-parser-js-npm-2.0.0-57848d35f4-10c0.zip/node_modules/ua-parser-js/",\
+        "packageDependencies": [\
+          ["ua-parser-js", "npm:2.0.0"],\
+          ["detect-europe-js", "npm:0.1.2"],\
+          ["is-standalone-pwa", "npm:0.1.1"],\
+          ["ua-is-frozen", "npm:0.1.2"]\
         ],\
         "linkType": "HARD"\
       }]\
