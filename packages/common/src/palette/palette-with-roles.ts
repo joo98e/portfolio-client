@@ -45,7 +45,7 @@ const paletteWithRoles: Record<GlobalThemeKey, PaletteWithRoles> = {
     "--button-secondary": palette.gray.L4,
     "--button-warn": palette.yellow.L9,
     "--button-danger": palette.red.L9,
-    "--text-primary": palette.gray.L6,
+    "--text-primary": palette.gray.L2,
     "--text-secondary": palette.gray.L8,
     "--text-warn": palette.yellow.L10,
     "--text-danger": palette.red.L9,
