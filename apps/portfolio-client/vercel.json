@@ -1,3 +1,4 @@
 {
-  "buildCommand": "pwd && ls -l && sh ./scripts/deploy.vercel.build.sh"
+  "ignoreCommand": "pwd && sh ./scripts/deploy.vercel.ignore.sh",
+  "buildCommand": "pwd && sh ./scripts/deploy.vercel.build.sh"
 }
