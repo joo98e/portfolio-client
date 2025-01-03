@@ -9,6 +9,7 @@ import "@joo98e/common/src/css/reset.css";
 import "@joo98e/common/src/css/theme.css";
 
 import type { Metadata, Viewport } from "next";
+import ClientProvider from "@/src/domain/global/providers/ClientProvider";
 
 const recoSans = localFont({
   src: "../fonts/recipekorea.ttf",
@@ -100,7 +101,9 @@ export default function RootLayout({
   return (
     <html lang="ko" suppressHydrationWarning>
       <body className={`${recoSans.variable}`}>
-        <ThemeProvider>{children}</ThemeProvider>
+        <ThemeProvider>
+          <ClientProvider>{children}</ClientProvider>
+        </ThemeProvider>
       </body>
     </html>
   );
