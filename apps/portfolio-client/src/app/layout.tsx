@@ -1,12 +1,14 @@
 import React from "react";
 import localFont from "next/font/local";
 import isMobileDevice from "@/src/common/libs/isMobileDevice";
-import type { Metadata, Viewport } from "next";
+import Meta from "@/src/common/meta/Meta";
+import { ThemeProvider } from "next-themes";
 
-import "./globals.css";
+import "@/src/common/assets/css/global.css";
 import "@joo98e/common/src/css/reset.css";
 import "@joo98e/common/src/css/theme.css";
-import Meta from "@/src/common/meta/Meta";
+
+import type { Metadata, Viewport } from "next";
 
 const recoSans = localFont({
   src: "../fonts/recipekorea.ttf",
@@ -96,8 +98,10 @@ export default function RootLayout({
   children: React.ReactNode;
 }>) {
   return (
-    <html lang="ko">
-      <body className={`${recoSans.variable}`}>{children}</body>
+    <html lang="ko" suppressHydrationWarning>
+      <body className={`${recoSans.variable}`}>
+        <ThemeProvider>{children}</ThemeProvider>
+      </body>
     </html>
   );
 }

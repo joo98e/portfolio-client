@@ -139,7 +139,7 @@
   --shadow-danger: #f03e3e;
 }
 
-@media (prefers-color-scheme: dark) {
+[data-theme='dark'] {
   --bg-primary: #212529;
   --bg-secondary: #343a40;
   --bg-warn: #e67700;

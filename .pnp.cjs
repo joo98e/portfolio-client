@@ -56,6 +56,7 @@ const RAW_RUNTIME_STATE =
           ["eslint", "npm:8.57.1"],\
           ["eslint-config-next", "virtual:cab35de842d3867ee4d775c1a6ff2fae0209fe305094f95dbe6c543884b1a1a9cf1d8df97f76e1e880e11bded2c680c85ddb16d961581ea1d5d951cc3486e400#npm:14.2.22"],\
           ["next", "virtual:cab35de842d3867ee4d775c1a6ff2fae0209fe305094f95dbe6c543884b1a1a9cf1d8df97f76e1e880e11bded2c680c85ddb16d961581ea1d5d951cc3486e400#npm:14.2.22"],\
+          ["next-themes", "virtual:cab35de842d3867ee4d775c1a6ff2fae0209fe305094f95dbe6c543884b1a1a9cf1d8df97f76e1e880e11bded2c680c85ddb16d961581ea1d5d951cc3486e400#npm:0.4.4"],\
           ["react", "npm:18.3.1"],\
           ["react-dom", "virtual:cab35de842d3867ee4d775c1a6ff2fae0209fe305094f95dbe6c543884b1a1a9cf1d8df97f76e1e880e11bded2c680c85ddb16d961581ea1d5d951cc3486e400#npm:18.3.1"],\
           ["typescript", "patch:typescript@npm%3A5.2.2#optional!builtin<compat/typescript>::version=5.2.2&hash=f3b441"],\
@@ -3512,6 +3513,32 @@ const RAW_RUNTIME_STATE =
           "react-dom",\
           "react",\
           "sass"\
+        ],\
+        "linkType": "HARD"\
+      }]\
+    ]],\
+    ["next-themes", [\
+      ["npm:0.4.4", {\
+        "packageLocation": "../../../.yarn/berry/cache/next-themes-npm-0.4.4-f8e3b20503-10c0.zip/node_modules/next-themes/",\
+        "packageDependencies": [\
+          ["next-themes", "npm:0.4.4"]\
+        ],\
+        "linkType": "SOFT"\
+      }],\
+      ["virtual:cab35de842d3867ee4d775c1a6ff2fae0209fe305094f95dbe6c543884b1a1a9cf1d8df97f76e1e880e11bded2c680c85ddb16d961581ea1d5d951cc3486e400#npm:0.4.4", {\
+        "packageLocation": "./.yarn/__virtual__/next-themes-virtual-08fd345cbe/4/.yarn/berry/cache/next-themes-npm-0.4.4-f8e3b20503-10c0.zip/node_modules/next-themes/",\
+        "packageDependencies": [\
+          ["next-themes", "virtual:cab35de842d3867ee4d775c1a6ff2fae0209fe305094f95dbe6c543884b1a1a9cf1d8df97f76e1e880e11bded2c680c85ddb16d961581ea1d5d951cc3486e400#npm:0.4.4"],\
+          ["@types/react", "npm:18.3.18"],\
+          ["@types/react-dom", "virtual:cab35de842d3867ee4d775c1a6ff2fae0209fe305094f95dbe6c543884b1a1a9cf1d8df97f76e1e880e11bded2c680c85ddb16d961581ea1d5d951cc3486e400#npm:18.3.5"],\
+          ["react", "npm:18.3.1"],\
+          ["react-dom", "virtual:cab35de842d3867ee4d775c1a6ff2fae0209fe305094f95dbe6c543884b1a1a9cf1d8df97f76e1e880e11bded2c680c85ddb16d961581ea1d5d951cc3486e400#npm:18.3.1"]\
+        ],\
+        "packagePeers": [\
+          "@types/react-dom",\
+          "@types/react",\
+          "react-dom",\
+          "react"\
         ],\
         "linkType": "HARD"\
       }]\
