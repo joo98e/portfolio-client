@@ -15,16 +15,9 @@
     "noEmit": true,
     "allowJs": true,
     "skipLibCheck": false,
-    "skipDefaultLibCheck": false
-//    "allowSyntheticDefaultImports": true,
-//    "resolveJsonModule": true,
-//    "target": "es5",
-//    "lib": [
-//      "dom",
-//      "dom.iterable",
-//      "esnext"
-//    ],
-//    "forceConsistentCasingInFileNames": true,
-//    "incremental": true
+    "skipDefaultLibCheck": false,
+    "types": [
+      "node"
+    ]
   }
 }

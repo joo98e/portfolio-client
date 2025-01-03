@@ -1,18 +1,7 @@
 import "./globals.css";
 import React from "react";
 import localFont from "next/font/local";
-import Common from "@joo98e/common/src/classes/Common";
 import type { Metadata } from "next";
-
-console.log(Common.desc);
-
-const description = Common.getDescription;
-
-const common = new Common();
-
-console.log(common);
-
-console.log(description);
 
 const geistSans = localFont({
   src: "./fonts/GeistVF.woff",

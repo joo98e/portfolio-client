@@ -1,11 +1,7 @@
 {
   "extends": "../../tsconfig.base.json",
   "compilerOptions": {
-    "skipLibCheck": false,
-    "skipDefaultLibCheck": false
+    "baseUrl": ".",
+    "isolatedModules": true
   },
-  "include": [
-    "**/*.ts",
-    "**/*.tsx"
-  ]
 }

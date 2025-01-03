@@ -1,7 +1,0 @@
-{
-  "name": "@joo98e/core",
-  "packageManager": "yarn@4.6.0",
-  "dependencies": {
-    "@joo98e/common": "workspace:^"
-  }
-}
