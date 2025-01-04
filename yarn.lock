@@ -11,6 +11,7 @@ __metadata:
   dependencies:
     "@emotion/core": "npm:^11.0.0"
     "@emotion/react": "npm:^11.14.0"
+    "@emotion/sheet": "npm:^1.4.0"
     "@emotion/styled": "npm:^11.14.0"
     "@joo98e/common": "workspace:^"
     "@types/node": "npm:^20"
