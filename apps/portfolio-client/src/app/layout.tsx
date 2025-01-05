@@ -65,15 +65,6 @@ export const metadata: Metadata = {
       default: Meta.title,
       template: `%s | ${Meta.signature}`,
     },
-    images: [
-      // {
-      //   url: ogMetaLogoUrl,
-      //   secureUrl: ogMetaLogoUrl,
-      //   width: 240,
-      //   height: 56,
-      //   alt: defaultTitle,
-      // },
-    ],
     siteName: Meta.signature,
   },
   twitter: {
