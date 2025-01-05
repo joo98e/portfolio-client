@@ -5,6 +5,7 @@ describe("StringUtil", () => {
   it("빈 문자열, NULL, undefined 는 비어있는 값으로 간주한다", () => {
     const blankCases = [
       BooleanUtil.isBlank(""), //
+      BooleanUtil.isBlank("  "), //
       BooleanUtil.isBlank(null),
       BooleanUtil.isBlank(undefined),
     ];
