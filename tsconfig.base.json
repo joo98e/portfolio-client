@@ -17,7 +17,8 @@
     "skipLibCheck": false,
     "skipDefaultLibCheck": false,
     "types": [
-      "node"
+      "node",
+      "jest"
     ]
   }
 }
