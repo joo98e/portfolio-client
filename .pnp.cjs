@@ -76,14 +76,17 @@ const RAW_RUNTIME_STATE =
           ["@emotion/styled", "virtual:8a7e3b80e0a77767835e18469a6c5c15ef2ffa7601bc482739dc6c32780347f8d15e1efa756ccc91e4329c6fad5081f01d7d0db8765af7b1dc5ac890a24f9c3d#npm:11.14.0"],\
           ["@joo98e/common", "workspace:packages/common"],\
           ["@joo98e/ui-react", "workspace:packages/ui"],\
+          ["@types/jest", "npm:29.5.14"],\
           ["@types/node", "npm:20.17.11"],\
           ["@types/react", "npm:18.3.18"],\
           ["@types/react-dom", "virtual:cab35de842d3867ee4d775c1a6ff2fae0209fe305094f95dbe6c543884b1a1a9cf1d8df97f76e1e880e11bded2c680c85ddb16d961581ea1d5d951cc3486e400#npm:18.3.5"],\
           ["globals", "npm:15.14.0"],\
+          ["jest", "virtual:e800dfdccdb6b9b71093ef5b116b3116654f70806208561aa54416b96dc2b2f0dbb8f6a34e0b151c299cba7b6c9f9b54bfb861c146418bd3775a32d2c8fcaaee#npm:29.7.0"],\
           ["next", "virtual:cab35de842d3867ee4d775c1a6ff2fae0209fe305094f95dbe6c543884b1a1a9cf1d8df97f76e1e880e11bded2c680c85ddb16d961581ea1d5d951cc3486e400#npm:14.2.22"],\
           ["next-themes", "virtual:cab35de842d3867ee4d775c1a6ff2fae0209fe305094f95dbe6c543884b1a1a9cf1d8df97f76e1e880e11bded2c680c85ddb16d961581ea1d5d951cc3486e400#npm:0.4.4"],\
           ["react", "npm:18.3.1"],\
           ["react-dom", "virtual:cab35de842d3867ee4d775c1a6ff2fae0209fe305094f95dbe6c543884b1a1a9cf1d8df97f76e1e880e11bded2c680c85ddb16d961581ea1d5d951cc3486e400#npm:18.3.1"],\
+          ["ts-jest", "virtual:cab35de842d3867ee4d775c1a6ff2fae0209fe305094f95dbe6c543884b1a1a9cf1d8df97f76e1e880e11bded2c680c85ddb16d961581ea1d5d951cc3486e400#npm:29.2.5"],\
           ["typescript", "patch:typescript@npm%3A5.2.2#optional!builtin<compat/typescript>::version=5.2.2&hash=f3b441"],\
           ["ua-parser-js", "npm:2.0.0"]\
         ],\
@@ -7865,6 +7868,52 @@ const RAW_RUNTIME_STATE =
           ["ts-jest", "npm:29.2.5"]\
         ],\
         "linkType": "SOFT"\
+      }],\
+      ["virtual:cab35de842d3867ee4d775c1a6ff2fae0209fe305094f95dbe6c543884b1a1a9cf1d8df97f76e1e880e11bded2c680c85ddb16d961581ea1d5d951cc3486e400#npm:29.2.5", {\
+        "packageLocation": "./.yarn/__virtual__/ts-jest-virtual-115de322f3/4/.yarn/berry/cache/ts-jest-npm-29.2.5-3012d53ff5-10c0.zip/node_modules/ts-jest/",\
+        "packageDependencies": [\
+          ["ts-jest", "virtual:cab35de842d3867ee4d775c1a6ff2fae0209fe305094f95dbe6c543884b1a1a9cf1d8df97f76e1e880e11bded2c680c85ddb16d961581ea1d5d951cc3486e400#npm:29.2.5"],\
+          ["@babel/core", null],\
+          ["@jest/transform", null],\
+          ["@jest/types", null],\
+          ["@types/babel-jest", null],\
+          ["@types/babel__core", null],\
+          ["@types/esbuild", null],\
+          ["@types/jest", "npm:29.5.14"],\
+          ["@types/jest__transform", null],\
+          ["@types/jest__types", null],\
+          ["@types/typescript", null],\
+          ["babel-jest", null],\
+          ["bs-logger", "npm:0.2.6"],\
+          ["ejs", "npm:3.1.10"],\
+          ["esbuild", null],\
+          ["fast-json-stable-stringify", "npm:2.1.0"],\
+          ["jest", "virtual:e800dfdccdb6b9b71093ef5b116b3116654f70806208561aa54416b96dc2b2f0dbb8f6a34e0b151c299cba7b6c9f9b54bfb861c146418bd3775a32d2c8fcaaee#npm:29.7.0"],\
+          ["jest-util", "npm:29.7.0"],\
+          ["json5", "npm:2.2.3"],\
+          ["lodash.memoize", "npm:4.1.2"],\
+          ["make-error", "npm:1.3.6"],\
+          ["semver", "npm:7.6.3"],\
+          ["typescript", "patch:typescript@npm%3A5.2.2#optional!builtin<compat/typescript>::version=5.2.2&hash=f3b441"],\
+          ["yargs-parser", "npm:21.1.1"]\
+        ],\
+        "packagePeers": [\
+          "@babel/core",\
+          "@jest/transform",\
+          "@jest/types",\
+          "@types/babel-jest",\
+          "@types/babel__core",\
+          "@types/esbuild",\
+          "@types/jest",\
+          "@types/jest__transform",\
+          "@types/jest__types",\
+          "@types/typescript",\
+          "babel-jest",\
+          "esbuild",\
+          "jest",\
+          "typescript"\
+        ],\
+        "linkType": "HARD"\
       }],\
       ["virtual:e800dfdccdb6b9b71093ef5b116b3116654f70806208561aa54416b96dc2b2f0dbb8f6a34e0b151c299cba7b6c9f9b54bfb861c146418bd3775a32d2c8fcaaee#npm:29.2.5", {\
         "packageLocation": "./.yarn/__virtual__/ts-jest-virtual-bf17fcd224/4/.yarn/berry/cache/ts-jest-npm-29.2.5-3012d53ff5-10c0.zip/node_modules/ts-jest/",\

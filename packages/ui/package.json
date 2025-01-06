@@ -1,9 +1,6 @@
 {
   "name": "@joo98e/ui-react",
   "version": "1.0.0",
-  "scripts": {
-    "build:token": "ts-node src/palette/build-token.ts"
-  },
   "dependencies": {
     "@emotion/core": "^11.0.0",
     "@emotion/react": "^11.14.0",

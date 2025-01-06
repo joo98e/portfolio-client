@@ -30,7 +30,7 @@ const JoouiTypography: FC<Props> = ({ as, size, children }) => {
       case size === "h4":
       case size === "h5":
       case size === "h6":
-        return size;
+        return size as HTMLTagName;
 
       case size.includes("caption"):
         return "caption";
