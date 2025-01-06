@@ -35,7 +35,7 @@ interface Props {
   children: ReactNode | ReactNode[];
 }
 
-const HorizontallyContainer: FC<Props> = ({ containerStyle, children }) => {
+const JoouiHorizontallyContainer: FC<Props> = ({ containerStyle, children }) => {
   const containerRef = useRef<HTMLDivElement | null>(null);
   const scrollContainerRef = useRef<HTMLDivElement | null>(null);
 
@@ -75,4 +75,4 @@ const HorizontallyContainer: FC<Props> = ({ containerStyle, children }) => {
   );
 };
 
-export default HorizontallyContainer;
+export default JoouiHorizontallyContainer;

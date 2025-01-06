@@ -13,6 +13,7 @@
     "@emotion/sheet": "^1.4.0",
     "@emotion/styled": "^11.14.0",
     "@joo98e/common": "workspace:^",
+    "@joo98e/ui-react": "workspace:^",
     "next": "14.2.22",
     "next-themes": "^0.4.4",
     "react": "^18",
