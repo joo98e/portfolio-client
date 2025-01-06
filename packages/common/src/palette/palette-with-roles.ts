@@ -1,7 +1,7 @@
-import { GlobalThemeKey, PaletteWithRoles } from "./theme";
+import { CommonPaletteWithRoles, CommonThemeKey } from "./theme";
 import palette from "./palette";
 
-const paletteWithRoles: Record<GlobalThemeKey, PaletteWithRoles> = {
+const paletteWithRoles: Record<CommonThemeKey, CommonPaletteWithRoles> = {
   light: {
     "--bg-primary": palette.gray.L1,
     "--bg-secondary": palette.gray.L2,

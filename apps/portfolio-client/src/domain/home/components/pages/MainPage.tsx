@@ -1,13 +1,10 @@
 import { FC } from "react";
+import MainTemplate from "@/src/domain/home/components/templates/MainTemplate";
 
 interface Props {}
 
 const MainPage: FC<Props> = ({}) => {
-  return (
-    <div>
-      <p>아녕하세요</p>
-    </div>
-  );
+  return <MainTemplate />;
 };
 
 export default MainPage;
