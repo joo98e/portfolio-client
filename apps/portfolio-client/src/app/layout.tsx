@@ -5,11 +5,10 @@ import Meta from "@/src/common/meta/Meta";
 import { ThemeProvider } from "next-themes";
 
 import "@/src/common/assets/css/global.css";
-import "@joo98e/common/src/css/reset.css";
-import "@joo98e/common/src/css/theme.css";
+import "../../../../packages/common/src/css/reset.css";
+import "../../../../packages/common/src/css/theme.css";
 
 import type { Metadata, Viewport } from "next";
-import ClientProvider from "@/src/domain/global/providers/ClientProvider";
 
 const recoSans = localFont({
   src: "../fonts/recipekorea.ttf",
@@ -92,9 +91,7 @@ export default function RootLayout({
   return (
     <html lang="ko" suppressHydrationWarning>
       <body className={`${recoSans.variable}`}>
-        <ThemeProvider>
-          <ClientProvider>{children}</ClientProvider>
-        </ThemeProvider>
+        <ThemeProvider>{children}</ThemeProvider>
       </body>
     </html>
   );

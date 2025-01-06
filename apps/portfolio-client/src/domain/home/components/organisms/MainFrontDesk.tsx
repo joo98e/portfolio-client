@@ -12,6 +12,12 @@ const MainContent = styled.div`
   top: 0;
   left: 0;
   z-index: 1;
+  width: 100%;
+  height: 100%;
+
+  opacity: 0.5;
+  background: url("/images/front-desk/profile-1.jpeg") center bottom no-repeat;
+  background-size: cover;
 `;
 
 const Slide = styled.div<{
