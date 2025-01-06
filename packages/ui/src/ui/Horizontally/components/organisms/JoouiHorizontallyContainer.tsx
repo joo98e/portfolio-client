@@ -6,7 +6,7 @@ import { SerializedStyles } from "@emotion/react";
 
 const Container = styled.div<{ height: number; containerStyle?: SerializedStyles }>`
   position: relative;
-  height: calc(${(props) => props.height + "vw"} + 50vw);
+  height: calc(${(props) => props.height + "vw"});
 
   ${(props) => props.containerStyle && props.containerStyle};
 `;
@@ -47,16 +47,15 @@ const JoouiHorizontallyContainer: FC<Props> = ({ containerStyle, children }) => 
     if (!scrollContainerRef.current || !containerRef.current) return;
 
     const currentY = window.scrollY;
-    const firstScreenHeight = scrollContainerRef.current.getBoundingClientRect().height;
+    const firstScreenHeight = scrollContainerRef.current.getBoundingClientRect().width * 0.25;
 
-    const scrollLeftPosition = (currentY - firstScreenHeight) * 0.85;
-    const marginScrollWidth = 100;
+    const scrollLeftPosition = currentY - firstScreenHeight;
 
-    scrollContainerRef.current.scrollLeft = scrollLeftPosition - marginScrollWidth;
+    scrollContainerRef.current.scrollLeft = scrollLeftPosition;
   };
 
   useEffect(() => {
-    setTotalHeight(childrens.length * 100);
+    setTotalHeight((childrens.length - 1) * 100);
 
     const isSingleSlide = childrens.length === 1;
     if (isSingleSlide) return;

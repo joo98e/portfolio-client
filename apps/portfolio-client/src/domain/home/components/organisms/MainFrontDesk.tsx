@@ -12,13 +12,16 @@ const MainContent = styled.div`
   top: 0;
   left: 0;
   z-index: 1;
+  display: flex;
+  flex-direction: column;
+  gap: 1rem;
 
   width: 100%;
   height: 100%;
   padding: 0.5rem;
   box-sizing: border-box;
 
-  &::before {
+  &::after {
     content: "";
     position: absolute;
     top: 0;
@@ -39,8 +42,21 @@ const Slide = styled.div<{
   display: flex;
   justify-content: center;
   align-items: center;
+  width: 100%;
+  height: 100%;
   background: ${(props) => props.bg || "#ccc"};
-  opacity: 0.5;
+
+  &::after {
+    content: "";
+    position: absolute;
+    top: 0;
+    left: 0;
+    z-index: -1;
+    width: 100%;
+    height: 100%;
+    opacity: 0.5;
+    background: ${(props) => props.bg || "#ccc"};
+  }
 `;
 
 interface Props {}
@@ -49,14 +65,22 @@ const MainFrontDesk: FC<Props> = ({}) => {
   return (
     <Container>
       <JoouiHorizontallyContainer>
-        <Slide bg="red">Slide 1</Slide>
-        <Slide bg="blue">Slide 2</Slide>
-        <Slide bg="green">Slide 3</Slide>
-        <Slide bg="yellow">Slide 4</Slide>
-        <Slide bg="pink">Slide 5</Slide>
+        <Slide bg="darkslategray">
+          <JoouiTypography size={"h1"}>A</JoouiTypography>
+        </Slide>
+        <Slide bg="skyblue">
+          <JoouiTypography size={"h1"}>B</JoouiTypography>
+        </Slide>
+        <Slide bg="darkolivegreen">
+          <JoouiTypography size={"h1"}>C</JoouiTypography>
+        </Slide>
+        <Slide bg="gray">
+          <JoouiTypography size={"h1"}>D</JoouiTypography>
+        </Slide>
 
         <MainContent>
-          <JoouiTypography size={"h3"}>개발자 정태복</JoouiTypography>
+          <JoouiTypography size={"h1"}>Frontend Developer</JoouiTypography>
+          <JoouiTypography size={"h1"}>Joo98e</JoouiTypography>
         </MainContent>
       </JoouiHorizontallyContainer>
     </Container>

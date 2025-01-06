@@ -7,7 +7,11 @@ import typographyLevels, {
 } from "@joo98e/common/src/typography/typography";
 import styled from "@emotion/styled";
 
-const Span = styled.span<CommonTypographySpec>``;
+const Span = styled.span<CommonTypographySpec>`
+  font-size: ${(props) => props.fontSize}px;
+  line-height: ${(props) => props.lineHeight}px;
+  font-weight: ${(props) => props.fontWeight};
+`;
 
 type HTMLTagName = keyof HTMLElementTagNameMap;
 
