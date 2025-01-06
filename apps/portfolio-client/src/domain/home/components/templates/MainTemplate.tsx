@@ -6,12 +6,7 @@ import MainFrontDesk from "@/src/domain/home/components/organisms/MainFrontDesk"
 
 const Container = styled.div`
   position: relative;
-`;
-
-const MainContent = styled.div`
-  position: absolute;
-  top: 0;
-  left: 0;
+  box-sizing: border-box;
 `;
 
 interface Props {}
