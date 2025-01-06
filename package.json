@@ -5,7 +5,6 @@
   "license": "MIT",
   "scripts": {
     "common": "yarn workspace @joo98e/common",
-    "core": "yarn workspace @joo98e/core",
     "client": "yarn workspace @apps/portfolio-client"
   },
   "workspaces": [
