@@ -1636,6 +1636,7 @@ const RAW_RUNTIME_STATE =
           ["@emotion/react", "virtual:8a7e3b80e0a77767835e18469a6c5c15ef2ffa7601bc482739dc6c32780347f8d15e1efa756ccc91e4329c6fad5081f01d7d0db8765af7b1dc5ac890a24f9c3d#npm:11.14.0"],\
           ["@emotion/sheet", "npm:1.4.0"],\
           ["@emotion/styled", "virtual:8a7e3b80e0a77767835e18469a6c5c15ef2ffa7601bc482739dc6c32780347f8d15e1efa756ccc91e4329c6fad5081f01d7d0db8765af7b1dc5ac890a24f9c3d#npm:11.14.0"],\
+          ["@joo98e/common", "workspace:packages/common"],\
           ["@types/jest", "npm:29.5.14"],\
           ["@types/node", "npm:22.10.3"],\
           ["@types/react", "npm:18.3.18"],\

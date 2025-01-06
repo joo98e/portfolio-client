@@ -1005,6 +1005,7 @@ __metadata:
     "@emotion/react": "npm:^11.14.0"
     "@emotion/sheet": "npm:^1.4.0"
     "@emotion/styled": "npm:^11.14.0"
+    "@joo98e/common": "workspace:^"
     "@types/jest": "npm:^29.5.14"
     "@types/node": "npm:^22.10.2"
     "@types/react": "npm:^18"

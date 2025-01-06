@@ -9,6 +9,7 @@
     "@emotion/react": "^11.14.0",
     "@emotion/sheet": "^1.4.0",
     "@emotion/styled": "^11.14.0",
+    "@joo98e/common": "workspace:^",
     "react": "18",
     "react-dom": "^19.0.0"
   },
