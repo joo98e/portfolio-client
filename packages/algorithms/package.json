@@ -1,15 +1,6 @@
 {
-  "name": "@joo98e/ui-react",
+  "name": "@joo98e/algorithms",
   "version": "1.0.0",
-  "dependencies": {
-    "@emotion/core": "^11.0.0",
-    "@emotion/react": "^11.14.0",
-    "@emotion/sheet": "^1.4.0",
-    "@emotion/styled": "^11.14.0",
-    "@joo98e/common": "workspace:^",
-    "react": "18",
-    "react-dom": "^19.0.0"
-  },
   "devDependencies": {
     "@types/jest": "^29.5.14",
     "@types/node": "^22.10.2",

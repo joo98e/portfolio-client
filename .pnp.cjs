@@ -19,6 +19,10 @@ const RAW_RUNTIME_STATE =
       "reference": "workspace:apps/portfolio-client"\
     },\
     {\
+      "name": "@joo98e/algorithms",\
+      "reference": "workspace:packages/algorithms"\
+    },\
+    {\
       "name": "@joo98e/common",\
       "reference": "workspace:packages/common"\
     },\
@@ -31,6 +35,7 @@ const RAW_RUNTIME_STATE =
   "ignorePatternData": "(^(?:\\\\.yarn\\\\/sdks(?:\\\\/(?!\\\\.{1,2}(?:\\\\/|$))(?:(?:(?!(?:^|\\\\/)\\\\.{1,2}(?:\\\\/|$)).)*?)|$))$)",\
   "fallbackExclusionList": [\
     ["@apps/portfolio-client", ["workspace:apps/portfolio-client"]],\
+    ["@joo98e/algorithms", ["workspace:packages/algorithms"]],\
     ["@joo98e/common", ["workspace:packages/common"]],\
     ["@joo98e/ui-react", ["workspace:packages/ui"]],\
     ["portfolio-client", ["workspace:."]]\
@@ -1612,6 +1617,23 @@ const RAW_RUNTIME_STATE =
           ["chalk", "npm:4.1.2"]\
         ],\
         "linkType": "HARD"\
+      }]\
+    ]],\
+    ["@joo98e/algorithms", [\
+      ["workspace:packages/algorithms", {\
+        "packageLocation": "./packages/algorithms/",\
+        "packageDependencies": [\
+          ["@joo98e/algorithms", "workspace:packages/algorithms"],\
+          ["@types/jest", "npm:29.5.14"],\
+          ["@types/node", "npm:22.10.3"],\
+          ["@types/react", "npm:18.3.18"],\
+          ["@types/react-dom", "virtual:8a7e3b80e0a77767835e18469a6c5c15ef2ffa7601bc482739dc6c32780347f8d15e1efa756ccc91e4329c6fad5081f01d7d0db8765af7b1dc5ac890a24f9c3d#npm:19.0.2"],\
+          ["jest", "virtual:e800dfdccdb6b9b71093ef5b116b3116654f70806208561aa54416b96dc2b2f0dbb8f6a34e0b151c299cba7b6c9f9b54bfb861c146418bd3775a32d2c8fcaaee#npm:29.7.0"],\
+          ["ts-jest", "virtual:e800dfdccdb6b9b71093ef5b116b3116654f70806208561aa54416b96dc2b2f0dbb8f6a34e0b151c299cba7b6c9f9b54bfb861c146418bd3775a32d2c8fcaaee#npm:29.2.5"],\
+          ["ts-node", "virtual:e800dfdccdb6b9b71093ef5b116b3116654f70806208561aa54416b96dc2b2f0dbb8f6a34e0b151c299cba7b6c9f9b54bfb861c146418bd3775a32d2c8fcaaee#npm:10.9.2"],\
+          ["typescript", "patch:typescript@npm%3A5.7.2#optional!builtin<compat/typescript>::version=5.7.2&hash=5786d5"]\
+        ],\
+        "linkType": "SOFT"\
       }]\
     ]],\
     ["@joo98e/common", [\
