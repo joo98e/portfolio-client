@@ -1,42 +1,34 @@
-function solution(arr) {
-  const operators = Math.ceil(arr.length / 2);
-
-  let max_dp = [];
-  let min_dp = [];
-
-  for (let i = 0; i < operators; i++) {
-    max_dp[i] = {};
-    min_dp[i] = {};
+function bruteForceSolution(arr, start, end) {
+  // Base case: 숫자 하나만 남은 경우
+  if (start === end) {
+    return parseInt(arr[start]);
   }
 
-  for (let i = 0; i < operators; i++) {
-    max_dp[i][i] = +arr[i * 2];
-    min_dp[i][i] = +arr[i * 2];
-  }
+  let maxResult = Number.NEGATIVE_INFINITY;
 
-  for (let cnt = 1; cnt < operators; cnt++) {
-    for (let i = 0; i < operators - cnt; i++) {
-      const j = i + cnt;
-      for (let k = i; k < j; k++) {
-        const operator = arr[k * 2 + 1];
-        if (operator === "+") {
-          max_dp[i][j] = Math.max(max_dp[i][j] ?? -Infinity, max_dp[i][k] + max_dp[k + 1][j]);
-          min_dp[i][j] = Math.min(min_dp[i][j] ?? Infinity, min_dp[i][k] + min_dp[k + 1][j]);
-        } else {
-          max_dp[i][j] = Math.max(max_dp[i][j] ?? -Infinity, max_dp[i][k] - min_dp[k + 1][j]);
-          min_dp[i][j] = Math.min(min_dp[i][j] ?? Infinity, min_dp[i][k] - max_dp[k + 1][j]);
-        }
-      }
+  // 가능한 모든 연산 순서 탐색
+  for (let k = start + 1; k < end; k += 2) {
+    const operator = arr[k];
+    const leftValue = bruteForceSolution(arr, start, k - 1); // 1번째 숫자
+    const rightValue = bruteForceSolution(arr, k + 1, end); // 나머지 숫자
+
+    let currentResult;
+    if (operator === "+") {
+      currentResult = leftValue + rightValue;
+    } else if (operator === "-") {
+      currentResult = leftValue - rightValue;
     }
+
+    maxResult = Math.max(maxResult, currentResult);
   }
 
-  return max_dp[0][operators - 1];
+  return maxResult;
 }
 
-const result1 = solution(["1", "-", "3", "+", "5", "-", "8"]);
-const result2 = solution(["5", "-", "3", "+", "1", "+", "2", "-", "4"]);
+// 문제 풀이 함수
+function solution(arr) {
+  return bruteForceSolution(arr, 0, arr.length - 1);
+}
 
-console.log({
-  result1,
-  result2,
-});
+// 테스트
+console.log(solution(["1", "-", "3", "+", "5", "-", "8"])); // 출력: 1
