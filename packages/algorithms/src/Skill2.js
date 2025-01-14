@@ -11,6 +11,7 @@ function solution(arr) {
 
   // DP 테이블 채우기
   for (let length = 2; length <= n; length += 2) {
+    // left value 는 그대로 두고, 3번째부터 시작
     // 부분 수식의 길이
     for (let i = 0; i <= n - length; i += 2) {
       // 시작 인덱스
