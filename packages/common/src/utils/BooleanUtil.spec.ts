@@ -31,4 +31,46 @@ describe("StringUtil", () => {
       expect(val).toBeFalsy();
     });
   });
+
+  it("test", async () => {
+    expect(5).toEqual(5);
+
+    console.log("start");
+    await ApiService.makeRequest(1).then(console.log);
+    await ApiService.makeRequest(2).then(console.log);
+    await ApiService.makeRequest(3).then(console.log);
+    console.log("end");
+  });
 });
+
+function Consoler(target: any, propertyKey: string, descriptor: PropertyDescriptor) {
+  console.log({
+    target,
+    propertyKey,
+    descriptor,
+  });
+
+  const originalMethod = descriptor.value;
+
+  descriptor.value = function (...args: any[]) {
+    console.log("Consoler");
+    return originalMethod.apply(this, args);
+  };
+
+  return descriptor;
+}
+
+class ApiService {
+  static readonly BASE_URL = "https://jsonplaceholder.typicode.com";
+
+  @Consoler
+  static async makeRequest(postNum: number) {
+    return new Promise((resolve) => {
+      const base = this.BASE_URL;
+
+      fetch(`${base}/posts/${postNum}`)
+        .then((res) => res.json())
+        .then((data) => resolve(data));
+    });
+  }
+}
